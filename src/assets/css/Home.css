@@ -1,0 +1,247 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 97%;
+}
+
+.main-navbar {
+  background-color: #121212;
+  padding: 5px;
+  padding-inline: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo-container {
+  border: solid 0.5px;
+  border-color: #f5c518;
+  border-radius: 10px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 5px;
+  background-color: #f5c518;
+}
+.logo-container img {
+  width: 90px;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.dropdown-container .dropdown-category {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown-frame {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  max-height: 500px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.category-list {
+  padding: 10px;
+}
+
+.category-list:hover {
+  background-color: #f5c518;
+  cursor: pointer;
+}
+
+.search-container {
+  background-color: white;
+  border: solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.search-container .button-submit {
+  background-color: white;
+  border: none;
+}
+.search-container .button-submit:hover {
+  cursor: pointer;
+}
+
+.input-search {
+  padding: 10px;
+  font-size: 20px;
+  width: 600px;
+  border: none;
+  border-radius: 10px;
+}
+
+.header-container {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-left {
+  width: 70%;
+}
+
+.title-header {
+  border-left: solid 5px;
+  padding-left: 10px;
+  border-color: #f5c518;
+}
+
+.image-container {
+  max-width: 100%;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+}
+
+.hot-movies {
+  width: 100%;
+}
+
+.hot-movies-image {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.hot-movies-image img {
+  position: relative;
+  width: 180px;
+  height: 280px;
+}
+.hot-movies-image:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.hot-movies-image:hover .overlay-gradient {
+  display: block;
+}
+
+.overlay-gradient {
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(72, 72, 72, 0.5), rgba(0, 0, 0, 0.9));
+  pointer-events: none;
+  opacity: 1;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  transform: translateX(-50%, -50%);
+  color: white;
+  border-radius: 5px;
+}
+
+.new-movie-image {
+  position: relative;
+}
+.new-movie-image img {
+  position: relative;
+  width: 150px;
+  height: 250px;
+}
+.new-movie-image:hover {
+  cursor: pointer;
+}
+.new-movie-image:hover .overlay-gradient {
+  display: block;
+}
+
+.header-right {
+  margin: 15px 0 0 20px;
+  border: solid 0.5px;
+  border-radius: 20px;
+  border-color: rgb(226, 226, 226);
+  background-color: rgb(243, 243, 243);
+  width: 100%;
+  padding-left: 20px;
+}
+
+.top-airing-card {
+  display: flex;
+  gap: 20px;
+  padding: 8px;
+  width: 90%;
+}
+.top-airing-card .numbers {
+  font-weight: 700;
+  font-size: 35px;
+}
+.top-airing-card img {
+  width: 70px;
+  height: 110px;
+}
+.top-airing-card h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.top-airing-card p {
+  margin: 5px 0 5px 0;
+  font-size: 15px;
+}
+.top-airing-card:hover {
+  background-color: rgb(182, 182, 182);
+  cursor: pointer;
+}
+
+.main-content {
+  margin-left: 30px;
+}
+
+.content-container {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+}/*# sourceMappingURL=Home.css.map */

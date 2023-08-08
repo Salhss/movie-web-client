@@ -1,0 +1,116 @@
+$highligt-color: #f5c518;
+$background-color: #121212;
+
+.main-navbar {
+    background-color: $background-color;
+    padding: 5px;
+    padding-inline: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-container {
+    border: solid 0.5px;
+    border-color: $highligt-color;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    background-color: $highligt-color;
+    img {
+        width: 90px;
+    }
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+
+}
+
+.dropdown-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    .dropdown-category {
+        font-size: 20px;
+        font-weight: 500;
+        color: white;
+    }
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+  .dropdown-frame {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    max-height: 500px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .category-list {
+    padding: 10px;
+  }
+
+  .category-list:hover {
+    background-color: $highligt-color;
+    cursor: pointer;
+  }
+
+  .search-container {
+    background-color: white;
+    border: solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+        .button-submit {
+            background-color: white;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+  }
+
+  .input-search {
+    padding: 10px;
+    font-size: 20px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+  }
